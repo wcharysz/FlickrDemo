@@ -1,0 +1,14 @@
+platform :ios, '11.2'
+use_frameworks!
+
+target 'FlickrDemo' do
+    pod 'Alamofire'
+    pod 'Koloda'
+    pod 'SWXMLHash'
+    pod 'AlamofireImage'
+end
+
+
+target 'FlickrDemoTests' do
+    pod 'SWXMLHash'
+end
