@@ -1,7 +1,8 @@
 //
-//  DispatchQueue+Alamofire.swift
+//  shim.swift
+//  SWXMLHash
 //
-//  Copyright (c) 2014 Alamofire Software Foundation (http://alamofire.org/)
+//  Copyright (c) 2018 David Mohundro
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -22,16 +23,14 @@
 //  THE SOFTWARE.
 //
 
-import Dispatch
-import Foundation
+#if (!swift(>=4.1) && swift(>=4.0)) || !swift(>=3.3)
 
-extension DispatchQueue {
-    static var userInteractive: DispatchQueue { return DispatchQueue.global(qos: .userInteractive) }
-    static var userInitiated: DispatchQueue { return DispatchQueue.global(qos: .userInitiated) }
-    static var utility: DispatchQueue { return DispatchQueue.global(qos: .utility) }
-    static var background: DispatchQueue { return DispatchQueue.global(qos: .background) }
-
-    func after(_ delay: TimeInterval, execute closure: @escaping () -> Void) {
-        asyncAfter(deadline: .now() + delay, execute: closure)
+    extension Sequence {
+        func compactMap<ElementOfResult>(
+            _ transform: (Self.Element
+            ) throws -> ElementOfResult?) rethrows -> [ElementOfResult] {
+            return try flatMap(transform)
+        }
     }
-}
+
+#endif

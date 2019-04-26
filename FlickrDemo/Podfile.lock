@@ -1,11 +1,11 @@
 PODS:
-  - Alamofire (4.5.1)
-  - AlamofireImage (3.3.0):
-    - Alamofire (~> 4.5)
-  - Koloda (4.3.1):
+  - Alamofire (4.8.2)
+  - AlamofireImage (3.5.2):
+    - Alamofire (~> 4.8)
+  - Koloda (4.7):
     - pop (~> 1.0)
-  - pop (1.0.10)
-  - SWXMLHash (4.2.5)
+  - pop (1.0.12)
+  - SWXMLHash (4.9.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -14,11 +14,11 @@ DEPENDENCIES:
   - SWXMLHash
 
 SPEC CHECKSUMS:
-  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
-  AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
-  Koloda: 0d39b2aa188ccd1fac48d752acaf9802e683c625
-  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
-  SWXMLHash: eb16013c6f654853980822e0a778c9d66e017dde
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
+  Koloda: f456d003d2ce15ef9f10c2874a444f1f570b490c
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  SWXMLHash: 87b0006848a548b7f9485b40bc71721b3ae39add
 
 PODFILE CHECKSUM: 50cbee35143de2280b01a4bef6efb6213f3ec5c9
 
