@@ -16,7 +16,7 @@ class ViewController: UIViewController, KolodaViewDataSource, KolodaViewDelegate
     /// The activity indicator which is launched when you download the new RSS feed.
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-    lazy var viewModel: ViewModel = {
+    lazy var viewModel: ViewModel = { [unowned self] in
         return ViewModel(self)
     }()
 
