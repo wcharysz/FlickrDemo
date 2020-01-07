@@ -30,6 +30,14 @@
 		EC528C88202C8B69009E8436 /* FlickrDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC528C87202C8B69009E8436 /* FlickrDemoUITests.swift */; };
 		EC528C96202C97A2009E8436 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC528C95202C97A2009E8436 /* ViewModel.swift */; };
 		EC528C9E202CA04E009E8436 /* KolodaViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC528C9D202CA04E009E8436 /* KolodaViewExtension.swift */; };
+		ECC21D4E23C4AB17002903F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC21D4D23C4AB17002903F8 /* SceneDelegate.swift */; };
+		ECC21D5223C4AC37002903F8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC21D5123C4AC37002903F8 /* HomeView.swift */; };
+		ECC21D5423C4AD4E002903F8 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC21D5323C4AD4E002903F8 /* CardView.swift */; };
+		ECC21D5523C4AD4E002903F8 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC21D5323C4AD4E002903F8 /* CardView.swift */; };
+		ECC21D5623C4AD4E002903F8 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC21D5323C4AD4E002903F8 /* CardView.swift */; };
+		ECC21D5823C4B176002903F8 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC21D5723C4B176002903F8 /* CircleImage.swift */; };
+		ECC21D5923C4B176002903F8 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC21D5723C4B176002903F8 /* CircleImage.swift */; };
+		ECC21D5A23C4B176002903F8 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC21D5723C4B176002903F8 /* CircleImage.swift */; };
 		ECD8FF152033494A00665194 /* AuthorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD8FF142033494A00665194 /* AuthorModel.swift */; };
 		ECD8FF16203354F100665194 /* AuthorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD8FF142033494A00665194 /* AuthorModel.swift */; };
 		ECD8FF17203354F300665194 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC355B54203347890031FA28 /* PhotoModel.swift */; };
@@ -85,6 +93,10 @@
 		EC528C89202C8B69009E8436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC528C95202C97A2009E8436 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		EC528C9D202CA04E009E8436 /* KolodaViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KolodaViewExtension.swift; sourceTree = "<group>"; };
+		ECC21D4D23C4AB17002903F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ECC21D5123C4AC37002903F8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		ECC21D5323C4AD4E002903F8 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		ECC21D5723C4B176002903F8 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		ECD8FF142033494A00665194 /* AuthorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -166,6 +178,7 @@
 				EC528C98202C9FE4009E8436 /* Controllers */,
 				EC528C97202C9FBE009E8436 /* ViewControllers */,
 				EC528C67202C8B69009E8436 /* AppDelegate.swift */,
+				ECC21D4D23C4AB17002903F8 /* SceneDelegate.swift */,
 				EC528C6B202C8B69009E8436 /* Main.storyboard */,
 				EC528C6E202C8B69009E8436 /* Assets.xcassets */,
 				EC528C70202C8B69009E8436 /* LaunchScreen.storyboard */,
@@ -214,6 +227,9 @@
 		EC528C99202C9FEE009E8436 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ECC21D5123C4AC37002903F8 /* HomeView.swift */,
+				ECC21D5323C4AD4E002903F8 /* CardView.swift */,
+				ECC21D5723C4B176002903F8 /* CircleImage.swift */,
 				EC355B48202F286C0031FA28 /* PhotoCardModel.swift */,
 				EC355B44202F24B20031FA28 /* PhotoCard.swift */,
 				EC355B46202F253B0031FA28 /* PhotoCard.xib */,
@@ -500,7 +516,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC355B4F2031FDF90031FA28 /* UIViewExtensions.swift in Sources */,
+				ECC21D4E23C4AB17002903F8 /* SceneDelegate.swift in Sources */,
 				EC355B45202F24B20031FA28 /* PhotoCard.swift in Sources */,
+				ECC21D5223C4AC37002903F8 /* HomeView.swift in Sources */,
 				ECD8FF152033494A00665194 /* AuthorModel.swift in Sources */,
 				EC528C6A202C8B69009E8436 /* ViewController.swift in Sources */,
 				EC528C96202C97A2009E8436 /* ViewModel.swift in Sources */,
@@ -511,6 +529,8 @@
 				EC528C68202C8B69009E8436 /* AppDelegate.swift in Sources */,
 				EC355B38202DF4300031FA28 /* PhotosPackage.swift in Sources */,
 				EC355B49202F286C0031FA28 /* PhotoCardModel.swift in Sources */,
+				ECC21D5823C4B176002903F8 /* CircleImage.swift in Sources */,
+				ECC21D5423C4AD4E002903F8 /* CardView.swift in Sources */,
 				EC355B3A202F0A990031FA28 /* Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -519,6 +539,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECC21D5523C4AD4E002903F8 /* CardView.swift in Sources */,
+				ECC21D5923C4B176002903F8 /* CircleImage.swift in Sources */,
 				ECD8FF17203354F300665194 /* PhotoModel.swift in Sources */,
 				EC355B41202F16A20031FA28 /* FeedParser.swift in Sources */,
 				ECD8FF16203354F100665194 /* AuthorModel.swift in Sources */,
@@ -532,7 +554,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECC21D5623C4AD4E002903F8 /* CardView.swift in Sources */,
 				EC528C88202C8B69009E8436 /* FlickrDemoUITests.swift in Sources */,
+				ECC21D5A23C4B176002903F8 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,7 +645,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -674,7 +698,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -692,7 +716,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wojciech.charysz.FlickrDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -707,7 +731,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wojciech.charysz.FlickrDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
