@@ -21,7 +21,7 @@ class FeedParser {
      - Returns: The PhotoPackage which contains an array of Photos conforming to the PhotoModel & AuthorModel protocols.
     */
     func parse(_ data: Data) -> PhotosPackage {
-        let xml = SWXMLHash.parse(data)
+        let xml = XMLHash.parse(data)
         
         let entries = xml["feed"]["entry"]
         let photos = entries.all.map { (entry) -> PhotoModel & AuthorModel in

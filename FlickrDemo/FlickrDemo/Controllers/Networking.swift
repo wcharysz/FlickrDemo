@@ -30,7 +30,7 @@ class Networking {
         if let url = URL(string: Networking.baseURL) {
             let queue = DispatchQueue(label: ResponseQueueLabels.photos.rawValue)
             
-            Alamofire.request(url, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil).responseData(queue: queue, completionHandler: { (response) in
+            AF.request(url, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil).responseData(queue: queue, completionHandler: { (response) in
                 
                 guard let data = response.data else {
                     completion(nil)

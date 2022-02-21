@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1130"
+   LastUpgradeVersion = "1240"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2196732FDB11AC842C2FB88F734C850C"
+               BlueprintIdentifier = "FFB04D726ABC9EE0E05E2477F1216CE8"
                BuildableName = "Pods_FlickrDemoTests.framework"
                BlueprintName = "Pods-FlickrDemoTests"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -40,15 +40,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2196732FDB11AC842C2FB88F734C850C"
-            BuildableName = "Pods_FlickrDemoTests.framework"
-            BlueprintName = "Pods-FlickrDemoTests"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

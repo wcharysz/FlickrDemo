@@ -38,9 +38,9 @@ class ViewModel {
     */
     func downloadPhotosFeed(_ completion:@escaping () -> Void) {
         let network = Networking()
-        network.downloadPhotos { (package) in
+        network.downloadPhotos { [weak self] (package) in
             if let package = package {
-                self.photosPackage = package
+                self?.photosPackage = package
             }
             completion()
         }

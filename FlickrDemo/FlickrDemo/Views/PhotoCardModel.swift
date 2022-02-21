@@ -11,7 +11,7 @@ import Alamofire
 import AlamofireImage
 
 /// PhotoCardModel is used together with the PhotoCard to provide content for this UIView.
-class PhotoCardModel {
+class PhotoCardModel: ObservableObject {
     
     /// The reference to the displayed PhotoCard view.
     private weak var view: PhotoCard?
@@ -32,7 +32,7 @@ class PhotoCardModel {
         return formatter
     }()
 
-    init(_ photoCard: PhotoCard) {
+    init(_ photoCard: PhotoCard?) {
         view = photoCard
     }
     
@@ -49,52 +49,69 @@ class PhotoCardModel {
     }
     
     /// The title of the photo. It's displayed by the PhotoCard titleLabel.
-    private var photoTitle: String? {
+    @Published var photoTitle: String? {
         didSet {
             view?.titleLabel.text = photoTitle
         }
     }
     
     /// The url of the photo. It's downloaded by the Alamofire and processed by AlamofireImage framework. It's displayed by the PhotoCard imageView.
-    private var imageURL: URL? {
+    @Published var imageURL: URL? {
         didSet {
-            if let url = imageURL {
-                Alamofire.request(url).responseImage(completionHandler: { (response) in
-                    self.view?.imageView.image = response.result.value
+            if let url = imageURL, let imageView = view?.imageView  {
+                AF.request(url).responseImage(completionHandler: { (response) in
+                    switch response.result {
+                    case .success(let image):
+                        imageView.image = image
+                    default:
+                        break
+                    }
+                    
+                    
                 })
             }
         }
     }
     
     /// The publish date of the photo. It's displayed by the PhotoCard dateLabel using dateFormatter to provide date string.
-    private var publishDate: Date? {
+    @Published var publishDate: Date? {
         didSet {
             if let date = publishDate {
-                view?.dateLabel.text = dateFormatter.string(from: date)
+                let text = dateFormatter.string(from: date)
+                view?.dateLabel.text = text
+                publishDateString = text
             }
         }
     }
     
+    @Published var publishDateString: String = ""
+    
     /// The author's name of the photo. It's displayed by the PhotoCard authorName label.
-    private var authorName: String? {
+    @Published var authorName: String? {
         didSet {
             view?.authorName.text = authorName
         }
     }
     
     /// The uri link of the photo's author Flickr web page. It's displayed by the PhotoCard linkLabel.
-    private var uri: URL? {
+    @Published var uri: URL? {
         didSet {
             view?.linkLabel.text = uri?.absoluteString
         }
     }
     
     /// The url of the photo. It's downloaded by the Alamofire and processed by AlamofireImage framework. It's displayed by the PhotoCard authorView.
-    private var buddyIcon: URL? {
+    @Published var buddyIcon: URL? {
         didSet {
-            if let url = buddyIcon {
-                Alamofire.request(url).responseImage(completionHandler: { (response) in
-                    self.view?.authorView.image = response.result.value
+            if let url = buddyIcon, let imageView = view?.authorView  {
+                AF.request(url).responseImage(completionHandler: { (response) in
+                    switch response.result {
+                    case .success(let image):
+                        imageView.image = image
+                    default:
+                        break
+                    }
+                    
                 })
             }
         }
