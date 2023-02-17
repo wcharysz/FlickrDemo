@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct FlickrAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PhotoListView(store: Store(initialState: PhotoList.State(), reducer: PhotoList()))
         }
     }
 }

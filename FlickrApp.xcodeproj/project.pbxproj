@@ -8,12 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		ECBC1C0828FFF1EC000E3F5A /* FlickrAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC1C0728FFF1EC000E3F5A /* FlickrAppApp.swift */; };
-		ECBC1C0A28FFF1EC000E3F5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC1C0928FFF1EC000E3F5A /* ContentView.swift */; };
 		ECBC1C0C28FFF1ED000E3F5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECBC1C0B28FFF1ED000E3F5A /* Assets.xcassets */; };
 		ECBC1C0F28FFF1ED000E3F5A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECBC1C0E28FFF1ED000E3F5A /* Preview Assets.xcassets */; };
 		ECBC1C1928FFF1ED000E3F5A /* FlickrAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC1C1828FFF1ED000E3F5A /* FlickrAppTests.swift */; };
 		ECBC1C2328FFF1ED000E3F5A /* FlickrAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC1C2228FFF1ED000E3F5A /* FlickrAppUITests.swift */; };
 		ECBC1C2528FFF1ED000E3F5A /* FlickrAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC1C2428FFF1ED000E3F5A /* FlickrAppUITestsLaunchTests.swift */; };
+		ECBC1C3328FFF2D7000E3F5A /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = ECBC1C3228FFF2D7000E3F5A /* ComposableArchitecture */; };
+		ECBC1C3528FFF2D7000E3F5A /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = ECBC1C3428FFF2D7000E3F5A /* Dependencies */; };
+		ECBC1C3B28FFF950000E3F5A /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC1C3A28FFF950000E3F5A /* PhotoView.swift */; };
+		ECBC1C3D28FFFA9D000E3F5A /* PhotoDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC1C3C28FFFA9D000E3F5A /* PhotoDomain.swift */; };
+		ECBC1C3F290000E6000E3F5A /* FeedParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC1C3E290000E6000E3F5A /* FeedParser.swift */; };
+		ECBC1C422900013A000E3F5A /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = ECBC1C412900013A000E3F5A /* SWXMLHash */; };
+		ECBC1C45290001CC000E3F5A /* PhotoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC1C44290001CC000E3F5A /* PhotoData.swift */; };
+		ECBC1C47290052C5000E3F5A /* TestFeed.xml in Resources */ = {isa = PBXBuildFile; fileRef = ECBC1C46290052C5000E3F5A /* TestFeed.xml */; };
+		ECBC1C48290052C5000E3F5A /* TestFeed.xml in Resources */ = {isa = PBXBuildFile; fileRef = ECBC1C46290052C5000E3F5A /* TestFeed.xml */; };
+		ECBC1C4A290146F7000E3F5A /* PhotoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC1C49290146F6000E3F5A /* PhotoListView.swift */; };
+		ECBC1C4B290146F7000E3F5A /* PhotoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC1C49290146F6000E3F5A /* PhotoListView.swift */; };
+		ECBC1C4D290147CE000E3F5A /* PhotoListDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC1C4C290147CE000E3F5A /* PhotoListDomain.swift */; };
+		ECBC1C4E290147CE000E3F5A /* PhotoListDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC1C4C290147CE000E3F5A /* PhotoListDomain.swift */; };
+		ECBC1C5029015FBE000E3F5A /* FeedClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC1C4F29015FBE000E3F5A /* FeedClient.swift */; };
+		ECBC1C5129015FBE000E3F5A /* FeedClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC1C4F29015FBE000E3F5A /* FeedClient.swift */; };
+		ECBC1C5429017CB3000E3F5A /* CardStack in Frameworks */ = {isa = PBXBuildFile; productRef = ECBC1C5329017CB3000E3F5A /* CardStack */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +51,6 @@
 /* Begin PBXFileReference section */
 		ECBC1C0428FFF1EC000E3F5A /* FlickrApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECBC1C0728FFF1EC000E3F5A /* FlickrAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrAppApp.swift; sourceTree = "<group>"; };
-		ECBC1C0928FFF1EC000E3F5A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ECBC1C0B28FFF1ED000E3F5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECBC1C0E28FFF1ED000E3F5A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ECBC1C1428FFF1ED000E3F5A /* FlickrAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickrAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +58,14 @@
 		ECBC1C1E28FFF1ED000E3F5A /* FlickrAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickrAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECBC1C2228FFF1ED000E3F5A /* FlickrAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrAppUITests.swift; sourceTree = "<group>"; };
 		ECBC1C2428FFF1ED000E3F5A /* FlickrAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ECBC1C3A28FFF950000E3F5A /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		ECBC1C3C28FFFA9D000E3F5A /* PhotoDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDomain.swift; sourceTree = "<group>"; };
+		ECBC1C3E290000E6000E3F5A /* FeedParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedParser.swift; sourceTree = "<group>"; };
+		ECBC1C44290001CC000E3F5A /* PhotoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoData.swift; sourceTree = "<group>"; };
+		ECBC1C46290052C5000E3F5A /* TestFeed.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TestFeed.xml; sourceTree = "<group>"; };
+		ECBC1C49290146F6000E3F5A /* PhotoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListView.swift; sourceTree = "<group>"; };
+		ECBC1C4C290147CE000E3F5A /* PhotoListDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListDomain.swift; sourceTree = "<group>"; };
+		ECBC1C4F29015FBE000E3F5A /* FeedClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +73,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECBC1C422900013A000E3F5A /* SWXMLHash in Frameworks */,
+				ECBC1C5429017CB3000E3F5A /* CardStack in Frameworks */,
+				ECBC1C3328FFF2D7000E3F5A /* ComposableArchitecture in Frameworks */,
+				ECBC1C3528FFF2D7000E3F5A /* Dependencies in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +120,10 @@
 		ECBC1C0628FFF1EC000E3F5A /* FlickrApp */ = {
 			isa = PBXGroup;
 			children = (
+				ECBC1C43290001BF000E3F5A /* Models */,
+				ECBC1C3728FFF830000E3F5A /* Services */,
+				ECBC1C3628FFF827000E3F5A /* Domains */,
 				ECBC1C0728FFF1EC000E3F5A /* FlickrAppApp.swift */,
-				ECBC1C0928FFF1EC000E3F5A /* ContentView.swift */,
 				ECBC1C0B28FFF1ED000E3F5A /* Assets.xcassets */,
 				ECBC1C0D28FFF1ED000E3F5A /* Preview Content */,
 			);
@@ -114,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				ECBC1C1828FFF1ED000E3F5A /* FlickrAppTests.swift */,
+				ECBC1C46290052C5000E3F5A /* TestFeed.xml */,
 			);
 			path = FlickrAppTests;
 			sourceTree = "<group>";
@@ -125,6 +154,50 @@
 				ECBC1C2428FFF1ED000E3F5A /* FlickrAppUITestsLaunchTests.swift */,
 			);
 			path = FlickrAppUITests;
+			sourceTree = "<group>";
+		};
+		ECBC1C3628FFF827000E3F5A /* Domains */ = {
+			isa = PBXGroup;
+			children = (
+				ECBC1C3928FFF92D000E3F5A /* Photo */,
+				ECBC1C3828FFF924000E3F5A /* PhotoList */,
+			);
+			path = Domains;
+			sourceTree = "<group>";
+		};
+		ECBC1C3728FFF830000E3F5A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ECBC1C3E290000E6000E3F5A /* FeedParser.swift */,
+				ECBC1C4F29015FBE000E3F5A /* FeedClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ECBC1C3828FFF924000E3F5A /* PhotoList */ = {
+			isa = PBXGroup;
+			children = (
+				ECBC1C49290146F6000E3F5A /* PhotoListView.swift */,
+				ECBC1C4C290147CE000E3F5A /* PhotoListDomain.swift */,
+			);
+			path = PhotoList;
+			sourceTree = "<group>";
+		};
+		ECBC1C3928FFF92D000E3F5A /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				ECBC1C3A28FFF950000E3F5A /* PhotoView.swift */,
+				ECBC1C3C28FFFA9D000E3F5A /* PhotoDomain.swift */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		ECBC1C43290001BF000E3F5A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ECBC1C44290001CC000E3F5A /* PhotoData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +216,12 @@
 			dependencies = (
 			);
 			name = FlickrApp;
+			packageProductDependencies = (
+				ECBC1C3228FFF2D7000E3F5A /* ComposableArchitecture */,
+				ECBC1C3428FFF2D7000E3F5A /* Dependencies */,
+				ECBC1C412900013A000E3F5A /* SWXMLHash */,
+				ECBC1C5329017CB3000E3F5A /* CardStack */,
+			);
 			productName = FlickrApp;
 			productReference = ECBC1C0428FFF1EC000E3F5A /* FlickrApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +294,11 @@
 				Base,
 			);
 			mainGroup = ECBC1BFB28FFF1EC000E3F5A;
+			packageReferences = (
+				ECBC1C3128FFF2D7000E3F5A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				ECBC1C402900013A000E3F5A /* XCRemoteSwiftPackageReference "SWXMLHash" */,
+				ECBC1C5229017CB3000E3F5A /* XCRemoteSwiftPackageReference "SwiftUI-CardStackView" */,
+			);
 			productRefGroup = ECBC1C0528FFF1EC000E3F5A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECBC1C0F28FFF1ED000E3F5A /* Preview Assets.xcassets in Resources */,
+				ECBC1C47290052C5000E3F5A /* TestFeed.xml in Resources */,
 				ECBC1C0C28FFF1ED000E3F5A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECBC1C48290052C5000E3F5A /* TestFeed.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +343,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECBC1C0A28FFF1EC000E3F5A /* ContentView.swift in Sources */,
+				ECBC1C3B28FFF950000E3F5A /* PhotoView.swift in Sources */,
+				ECBC1C3D28FFFA9D000E3F5A /* PhotoDomain.swift in Sources */,
+				ECBC1C4A290146F7000E3F5A /* PhotoListView.swift in Sources */,
 				ECBC1C0828FFF1EC000E3F5A /* FlickrAppApp.swift in Sources */,
+				ECBC1C3F290000E6000E3F5A /* FeedParser.swift in Sources */,
+				ECBC1C5029015FBE000E3F5A /* FeedClient.swift in Sources */,
+				ECBC1C4D290147CE000E3F5A /* PhotoListDomain.swift in Sources */,
+				ECBC1C45290001CC000E3F5A /* PhotoData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +359,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECBC1C1928FFF1ED000E3F5A /* FlickrAppTests.swift in Sources */,
+				ECBC1C4E290147CE000E3F5A /* PhotoListDomain.swift in Sources */,
+				ECBC1C5129015FBE000E3F5A /* FeedClient.swift in Sources */,
+				ECBC1C4B290146F7000E3F5A /* PhotoListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,6 +672,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ECBC1C3128FFF2D7000E3F5A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
+		ECBC1C402900013A000E3F5A /* XCRemoteSwiftPackageReference "SWXMLHash" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/drmohundro/SWXMLHash.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		ECBC1C5229017CB3000E3F5A /* XCRemoteSwiftPackageReference "SwiftUI-CardStackView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dadalar/SwiftUI-CardStackView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ECBC1C3228FFF2D7000E3F5A /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECBC1C3128FFF2D7000E3F5A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		ECBC1C3428FFF2D7000E3F5A /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECBC1C3128FFF2D7000E3F5A /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = Dependencies;
+		};
+		ECBC1C412900013A000E3F5A /* SWXMLHash */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECBC1C402900013A000E3F5A /* XCRemoteSwiftPackageReference "SWXMLHash" */;
+			productName = SWXMLHash;
+		};
+		ECBC1C5329017CB3000E3F5A /* CardStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECBC1C5229017CB3000E3F5A /* XCRemoteSwiftPackageReference "SwiftUI-CardStackView" */;
+			productName = CardStack;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ECBC1BFC28FFF1EC000E3F5A /* Project object */;
 }
