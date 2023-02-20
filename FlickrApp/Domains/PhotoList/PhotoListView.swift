@@ -15,21 +15,36 @@ struct PhotoListView: View {
     
     var body: some View {
         WithViewStore(store) { viewStore in
-            CardStack(direction: LeftRight.direction(degrees:), data: viewStore.binding(\.$photosContainer)) { element, direction in
-                
-                viewStore.send(.checkPhotosStack(shownElement: element.wrappedValue))
-            } content: { element, direction, value in
-                IfLetStore(store.scope(state: { _ in
-                    element.wrappedValue
-                }, action: PhotoList.Action.photoDomain(action: ))) { store in
-                    PhotoView(store: store)
-                        .background(.white)
-                        .border(.gray)
-                        .padding()
-                        .clipped()
+            NavigationStack(path: viewStore.binding(\.$route)) {
+                CardStack(direction: LeftRight.direction(degrees:), data: viewStore.binding(\.$photosContainer)) { element, direction in
+                    
+                    viewStore.send(.checkPhotosStack(shownElement: element.wrappedValue))
+                } content: { element, direction, value in
+                    IfLetStore(store.scope(state: { _ in
+                        element.wrappedValue
+                    }, action: PhotoList.Action.photoDomain(action: ))) { store in
+                        
+                        PhotoView(store: store)
+                            .background(.white)
+                            .border(.gray)
+                            .padding()
+                            .clipped()
+                            .onTapGesture {
+                                viewStore.send(.navigate(.photoDetails(element.wrappedValue)))
+                            }
+                    }
+                }.onAppear {
+                    viewStore.send(.loadNewPhotos)
+                }.navigationDestination(for: PhotoList.RouteSteps.self) { step in
+                    switch step {
+                    case .photoDetails(let photoState):
+                        IfLetStore(store.scope(state: { _ in
+                            photoState
+                        }, action: PhotoList.Action.photoDomain(action: ))) { store in
+                            PhotoView(store: store)
+                        }
+                    }
                 }
-            }.onAppear {
-                viewStore.send(.loadNewPhotos)
             }
         }
     }

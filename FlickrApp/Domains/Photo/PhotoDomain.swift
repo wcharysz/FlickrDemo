@@ -10,10 +10,14 @@ import ComposableArchitecture
 
 struct Photo: ReducerProtocol {
 
-    struct State: Equatable, Identifiable {
+    struct State: Equatable, Identifiable, Hashable {
         var id = UUID()
         var author: PhotoAuthor
         var photo: PhotoData
+        
+        func hash(into hasher: inout Hasher) {
+            hasher.combine(id)
+        }
     }
     
     enum Action {

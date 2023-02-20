@@ -10,8 +10,13 @@ import ComposableArchitecture
 
 struct PhotoList: ReducerProtocol {
     
+    enum RouteSteps: Hashable {
+        case photoDetails(Photo.State?)
+    }
+    
     struct State: Equatable {
         @BindingState var photosContainer: [Photo.State] = []
+        @BindingState var route: [RouteSteps] = []
     }
     
     @Dependency(\.feedParser.parseFeed) var parser
@@ -23,6 +28,7 @@ struct PhotoList: ReducerProtocol {
         case photoDomain(action: Photo.Action)
         case addPhotos(PhotoContainer)
         case binding(BindingAction<State>)
+        case navigate(RouteSteps)
     }
     
     var body: some ReducerProtocol<State, Action> {
@@ -50,6 +56,9 @@ struct PhotoList: ReducerProtocol {
                     }
                 }
                 
+                return .none
+            case .navigate( let step):
+                state.route = [step]
                 return .none
             }
         }
